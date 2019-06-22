@@ -1,0 +1,5 @@
+AuthName "Please enter your account and password."
+AuthType Basic
+AuthUserFile /the/path/to/your/dataset/.htpasswd
+AuthGroupFile /dev/null 
+require valid-user
