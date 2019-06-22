@@ -18,14 +18,14 @@ I use the following tools to set up this dataset management system:
 Before we move to any management side, make sure your dataset on the server is password protected by htaccess authentication.
 
     1. > 'mkdir /path/to/your/dataset/folder'
-    2. upload your data /path/to/your/dataset/folder
+    2. upload your data to /path/to/your/dataset/folder
     3. It's always a good idea to provide md5checksum to all your files
     4. > 'chmod 644 /path/to/your/dataset/folder' #read-only for others
     5. > 'cd /path/to/your/dataset/folder && chmod 644 ./*'
     6. copy .htacess and .htpassword to /path/to/your/dataset/folder
      
 ## Step 2: Set up Google Forms to collect applications
-Now let's create a Google Forms for online application:
+Now let's create a Google Form for online application:
 
    1. Create a Gmail account for managing dataset
    2. Use your account to create a Google Forms (Drive --> New --> More --> Google Forms)
@@ -33,8 +33,6 @@ Now let's create a Google Forms for online application:
    4. You may also want to use add-ons in the Google Form, such as Email Notification from Form/Form Notifications, to send the auto remainder to you and the requester, saying something like "Oh, we receive your request/we are on it."
    
 ## Step 3: Link Google Forms to a Google Spreadsheet
-Now let's create a Google Forms for online application:
-
    1. In Google Forms, click Response, and click ![alt text](https://github.com/yaojieliu/dataset-watchdog/blob/master/icon.png) to link your form to a Google Spreadsheet
    2. In the linked spreadsheet, you will see all the items in your form. 
    3. To manage the applications, add several columns of **Username** (I use email as username), **Password** (I generate 6 random digits), **Status** (approved/pending/reject/extended/so on...), **Expire date** (set as 30 days after Send date), **Sent date** (the date I approve the application and sent requester the username/password), **Note** (reasons of Status, more for rejected/pending cases) and other things you may need
@@ -45,11 +43,9 @@ Now let's write gs functions for online processing:
    2. After modifying the code, run onOpen()
    3. Go back to the Spreadsheet, you will see the reply button appears
 
-## Step 5: Test the system
-Now everything should be all set now, but before put everything onlne, it's better to test with a couple of dummy applications:
-   1. Fill three applicant
-   2. After modifying the code, run onOpen()
-   3. Go back to the Spreadsheet, you will see the reply button appears 
+## Step 5: Download spreadsheet and update .htpasswd
+   1. Download the spreadsheet as .csv file
+   2. generate and upload the .htpasswd via 'bash ./process.sh'
 
 ## Step 6: Test the system
 Now everything should be all set now, but before put everything onlne, it's better to test with a couple of dummy applications:
