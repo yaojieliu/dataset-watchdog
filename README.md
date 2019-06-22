@@ -29,5 +29,5 @@ Now let's create a Google Forms for online application:
 
    1. Create a Gmail account for managing dataset
    2. Use your account to create a Google Forms (Drive --> New --> More --> Google Forms)
-   3. Design your own online application form. For me, the Google Form would collect email, name, academic/industrial, advisor information, and upload the agreement form. You can check my form [here] (https://docs.google.com/forms/d/e/1FAIpQLScYtuCOp5G3-Pu2Jrtu_ZGd8-WQ0sMsX0l-DsQ-Jy_prVAjDg/viewform);
+   3. Design your own online application form. For me, the Google Form would collect email, name, academic/industrial, advisor information, and upload the agreement form. You can check my form [here](https://docs.google.com/forms/d/e/1FAIpQLScYtuCOp5G3-Pu2Jrtu_ZGd8-WQ0sMsX0l-DsQ-Jy_prVAjDg/viewform);
  
